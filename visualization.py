@@ -18,8 +18,7 @@ def main() -> None:
     sensor_data = {}
     timestamps  = []
 
-    for i in range(20):
-        sensor_data[f"SENSOR{i+1}"] = []
+    sensor_data = {f"SENSOR{i+1}": [] for i in range(20)}
     
     for time in df["packet_time"]:
         timestamps.append(clean_time(time))
