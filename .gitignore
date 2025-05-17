@@ -1,2 +1,3 @@
 resources/thermal_data.csv
 __pycache__
+config.py
